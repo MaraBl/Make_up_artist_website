@@ -3,23 +3,6 @@
 AOS.init();
 
 
-//GALLERY
-
-$('[data-fancybox="images"]').fancybox({
-  buttons : [ 
-    'slideShow',
-    'share',
-    'zoom',
-    'fullScreen',
-    'close'
-  ],
-  thumbs : {
-    autoStart : true  
-  }
-
-});
-
-
 // SLOGAN - Wrap every letter in a span
 
 var textWrapper = document.querySelector('.ml3');
@@ -39,6 +22,25 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 10000
   });
+
+//GALLERY
+
+$('[data-fancybox="images"]').fancybox({
+  buttons : [ 
+    'slideShow',
+    'share',
+    'zoom',
+    'fullScreen',
+    'close'
+  ],
+  thumbs : {
+    autoStart : true  
+  }
+
+});
+
+
+
 
 
 // LOAD MORE GALLERY FUNCTION
