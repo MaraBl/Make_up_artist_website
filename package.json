@@ -1,16 +1,16 @@
 {
   "name": "makeup",
   "version": "1.0.0",
-  "description": "",
+  "description": "https://marabl.github.io/Make_up_artist_website/",
   "main": "index.js",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/MaraBl/Make_up_artist_website.git"
   },
   "keywords": [],
   "author": "mara",
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/MaraBl/Make_up_artist_website#readme",
   "devDependencies": {}
 }
