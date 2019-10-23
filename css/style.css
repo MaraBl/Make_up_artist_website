@@ -44,7 +44,7 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: deeppink;
+  color: #C71585;
 }
 
 .navbar img {
@@ -127,7 +127,6 @@ body {
   text-align: center;
 }
 
-
 .gallery img {
   width: 30%;
   height: auto; 
@@ -138,7 +137,7 @@ body {
 }
 
 .gallery button:hover {
-  background-color: deeppink
+  background-color: #fff;
 }
 
 #more {display: none;}
@@ -194,12 +193,12 @@ footer a,
 
 footer a:hover {
   text-decoration: none;
-  color: deeppink;
+  color: #C71585;
 }
 
 
 .fa-stack-2x {
-  color: deeppink;
+  color: #C71585;
 }
 
 .fa-inverse {
@@ -234,7 +233,7 @@ footer .copy .col-12 > p {
   .container {margin: 0; padding: 0;}
   .container .row {margin: 0; border-radius: 0;}
   .container h2 {margin: 8% 0 12% 0;}
-  .hero {background-image: url("../images/makeUp.jpeg"); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed;}
+  .hero {background-image: url("../images/makeUp.jpeg"); background-position: center; background-repeat: no-repeat; background-size: cover;}
   .gallery {background-color: black; margin:0; padding: 0;}
   .gallery .row { margin: 0,; padding: 3% 0;}
   .gallery img {width: 40%;}
