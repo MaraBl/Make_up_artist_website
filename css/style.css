@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: black;
+  background-image: url("../images/makeUp.jpeg"); 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  max-width: 1100px;
+  height: auto;
+}
+
+.container h2 {
+  text-align: center;
+  width: 100%;
+}
+h2  {
+  margin: 2% 0 3% 0;
+  font-weight: 900;
+}
+
+.container .row {
+  margin: 3%;
+  border-radius: 1%;
+}
+
+
+/*NAVBAR AND NAVIGATION*/
+
+.navbar {
+  text-align: center;
+}
+
+.navbar a {
+  color: #fff;
+}
+.navbar a:hover {
+  color: #C0C0C0;
+}
+
+.navbar img {
+  max-height: 40px;
+}
+.navbar-toggler {
+  float: right;
+}
+
+.navbar-brand {
+  margin-right: 5%;
+}
+
+.nav-item {
+  min-width: 130px;
+  text-align: right;
+}
+
+.nav-item a {
+  font-size: 18px;
+}
+
+.collapse {
+  margin-left: 15%;
+}
+.navbar-collapse a {
+  float: right;
+}
+
+
+/* HERO */
+
+.slogan {
+  text-align: center;
+  padding: 10% 6%;
+}
+
+
+
+.ml3 {
+  font-weight: 900;
+  font-size: 2.8em;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+
+/* ABOUT SECTION */
+
+.photoCV {
+  text-align: center;
+}
+
+.about img {
+  width: 300px;
+  height: auto;
+  margin: 10%;
+  border-radius: 5%;
+}
+
+.about .row {
+  padding: 5% 1%;
+  background-color: white;
+}
+
+
+
+/*GALLERY */
+
+.gallery .row {
+  background-color: #000000;
+  padding: 3% 0;
+  text-align: center;
+}
+
+.gallery h2 {
+  color: white;
+}
+.gallery .row {
+  text-align: center;
+}
+
+.gallery button {
+  margin: 1%;
+}
+
+.gallery img {
+  width: 30%;
+  height: auto; 
+}
+.gallery button{
+  margin: 1% 45%;
+}
+
+#more {display: none;}
+
+
+
+/* PRICE LIST */
+
+.prices .row {
+  background-color: #fff;
+  text-align: center;
+  padding: 3% 4%;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    margin: 0;
+}
+
+footer h2 {
+  margin: 4% 0;
+}
+
+footer h2:after {
+  content:'\00a0\00a0\00a0\00a0';
+  text-decoration: line-through;
+  margin: auto 0.5em;
+}
+
+footer h2:before {
+  content:'\00a0\00a0\00a0\00a0';
+  text-decoration: line-through;
+  margin: auto 0.5em;
+}
+
+footer .container {
+  text-align: center;
+}
+
+footer a {
+    font-weight: 900;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+footer span:hover {
+  color: #55ACEE;
+  text-decoration: none;
+}
+
+footer .btn,
+.navbar .btn  {
+  background-color: #55ACEE;
+  border-radius: 50%;
+}
+
+footer .copy {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+
+footer .copy .col-12 > p {
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+
+
+
+
+/* MEDIA QUERIES*/
+
+@media (max-width: 1199.98px) {
+.navbar-brand {margin-right: 5%;}
+}
+
+
+@media (max-width: 991.98px) { 
+  .about .row {padding: 5%;}
+  .carousel-cell {height: 400px;}
+  footer .row {text-align: left; margin-left: 7%;}
+  footer .row .col-md-4 {margin: 0; padding:0;}
+ }
+
+
+ @media (max-width: 767.98px) { 
+  .about .row {padding: 5%;}
+  .about img {margin: 5% 0 8% 0;}
+  .gallery {background-color: black; margin:0; padding: 0;}
+  .gallery .row { margin: 0,; padding: 3% 0;}
+  .gallery-cell { width: 50%; }
+  .carousel-cell {width: 60%;}
+  #gallery-overlay #next{right: 5px;}
+  #gallery-overlay #prev{left: 25px;}
+  #gallery-overlay #close{position: absolute; top: 20px; right: 28px;}
+  footer .row {text-align: left; margin: 7%;}
+  footer .row .col-md-4 {margin: 2%; padding:2%;}
+  footer .row .col-sm-12 {margin-bottom: 5%;}
+ }
