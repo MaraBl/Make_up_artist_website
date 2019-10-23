@@ -16,7 +16,6 @@ body {
   padding: 0;
 }
 
-
 .container {
   max-width: 1100px;
   height: auto;
@@ -25,9 +24,7 @@ body {
 .container h2 {
   text-align: center;
   width: 100%;
-}
-h2  {
-  margin: 2% 0 3% 0;
+  margin: 5% 0 8% 0;
   font-weight: 900;
 }
 
@@ -42,12 +39,12 @@ h2  {
 .navbar {
   text-align: center;
 }
-
-.navbar a {
-  color: #fff;
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
 }
-.navbar a:hover {
-  color: #C0C0C0;
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: deeppink;
 }
 
 .navbar img {
@@ -58,7 +55,7 @@ h2  {
 }
 
 .navbar-brand {
-  margin-right: 5%;
+  margin: 0 5% 0 4%;
 }
 
 .nav-item {
@@ -71,7 +68,7 @@ h2  {
 }
 
 .collapse {
-  margin-left: 15%;
+  margin-left: 18%;
 }
 .navbar-collapse a {
   float: right;
@@ -84,8 +81,6 @@ h2  {
   text-align: center;
   padding: 10% 6%;
 }
-
-
 
 .ml3 {
   font-weight: 900;
@@ -102,9 +97,10 @@ h2  {
 }
 
 .about img {
-  width: 300px;
+  width: 80%;
+  min-width: 300px;
   height: auto;
-  margin: 10%;
+  margin: 5%;
   border-radius: 5%;
 }
 
@@ -126,34 +122,42 @@ h2  {
 .gallery h2 {
   color: white;
 }
+
 .gallery .row {
   text-align: center;
 }
 
-.gallery button {
-  margin: 1%;
-}
 
 .gallery img {
   width: 30%;
   height: auto; 
 }
-.gallery button{
-  margin: 1% 45%;
+
+.gallery button {
+  width: 150px;
+}
+
+.gallery button:hover {
+  background-color: deeppink
 }
 
 #more {display: none;}
-
-
+.more {
+  width: 100%;
+  text-align: center;
+}
 
 /* PRICE LIST */
 
 .prices .row {
   background-color: #fff;
   text-align: center;
-  padding: 3% 4%;
+  padding: 0 4% 3% 4%;
 }
-
+thead {
+  background-color: #9da6af;
+  color: #fff;
+}
 
 /* FOOTER */
 
@@ -163,9 +167,6 @@ footer {
     margin: 0;
 }
 
-footer h2 {
-  margin: 4% 0;
-}
 
 footer h2:after {
   content:'\00a0\00a0\00a0\00a0';
@@ -183,25 +184,30 @@ footer .container {
   text-align: center;
 }
 
-footer a {
+footer a,
+.navbar a {
     font-weight: 900;
     text-decoration: none;
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 footer a:hover {
   text-decoration: none;
-}
-footer span:hover {
-  color: #55ACEE;
-  text-decoration: none;
+  color: deeppink;
 }
 
-footer .btn,
-.navbar .btn  {
-  background-color: #55ACEE;
-  border-radius: 50%;
+
+.fa-stack-2x {
+  color: deeppink;
+}
+
+.fa-inverse {
+  color: white;
+}
+
+footer span {
+  margin: 3%;
 }
 
 footer .copy {
@@ -213,7 +219,6 @@ footer .copy {
    text-align: center;
 }
 
-
 footer .copy .col-12 > p {
     text-align: center;
     padding: 10px;
@@ -222,34 +227,37 @@ footer .copy .col-12 > p {
 
 
 
-
-
 /* MEDIA QUERIES*/
 
-@media (max-width: 1199.98px) {
-.navbar-brand {margin-right: 5%;}
+@media (max-width: 767.98px) { 
+  body {background-color: #000000; background-image: none;}
+  .container {margin: 0; padding: 0;}
+  .container .row {margin: 0; border-radius: 0;}
+  .container h2 {margin: 8% 0 12% 0;}
+  .hero {background-image: url("../images/makeUp.jpeg"); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed;}
+  .gallery {background-color: black; margin:0; padding: 0;}
+  .gallery .row { margin: 0,; padding: 3% 0;}
+  .gallery img {width: 40%;}
+
+  .gallery button {margin: 8%;}
+  footer .row {text-align: left; padding: 7%;}
+  footer .row .col-md-4 {margin: 2%; padding:2%;}
+  footer .row .col-sm-12 {margin-bottom: 5%;}
 }
 
-
-@media (max-width: 991.98px) { 
-  .about .row {padding: 5%;}
-  .carousel-cell {height: 400px;}
+@media (max-width: 991.98px) {
+  .about img {width: 70%;}
+  .gallery img {width: 40%;}
+  .fancybox-show-thumbs .fancybox-inner {right: 0;}
+  .fancybox-show-thumbs .fancybox-thumbs {display: none;}
   footer .row {text-align: left; margin-left: 7%;}
   footer .row .col-md-4 {margin: 0; padding:0;}
  }
 
 
- @media (max-width: 767.98px) { 
-  .about .row {padding: 5%;}
-  .about img {margin: 5% 0 8% 0;}
-  .gallery {background-color: black; margin:0; padding: 0;}
-  .gallery .row { margin: 0,; padding: 3% 0;}
-  .gallery-cell { width: 50%; }
-  .carousel-cell {width: 60%;}
-  #gallery-overlay #next{right: 5px;}
-  #gallery-overlay #prev{left: 25px;}
-  #gallery-overlay #close{position: absolute; top: 20px; right: 28px;}
-  footer .row {text-align: left; margin: 7%;}
-  footer .row .col-md-4 {margin: 2%; padding:2%;}
-  footer .row .col-sm-12 {margin-bottom: 5%;}
- }
+@media (max-width: 1199.98px) {
+  .navbar-brand {margin-right: 5%;}
+}
+
+
+
