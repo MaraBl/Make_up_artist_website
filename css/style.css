@@ -33,6 +33,14 @@ body {
   border-radius: 1%;
 }
 
+a {
+	outline: none; 
+}
+
+a:active { 
+	outline: none; 
+}
+
 
 /*NAVBAR AND NAVIGATION*/
 
@@ -73,7 +81,6 @@ body {
 .navbar-collapse a {
   float: right;
 }
-
 
 /* HERO */
 
@@ -237,7 +244,6 @@ footer .copy .col-12 > p {
   .gallery {background-color: black; margin:0; padding: 0;}
   .gallery .row { margin: 0,; padding: 3% 0;}
   .gallery img {width: 40%;}
-
   .gallery button {margin: 8%;}
   footer .row {text-align: left; padding: 7%;}
   footer .row .col-md-4 {margin: 2%; padding:2%;}
