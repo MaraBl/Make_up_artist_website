@@ -15,7 +15,7 @@ anime.timeline({loop: false})
     easing: "easeInOutQuad",
     duration: 1550,
     delay: (el, i) => 50 * (i+1)
-  }).//add({
+  })//.add({
     //targets: '.ml3',
     //opacity: 0,
     //duration: 1000,
