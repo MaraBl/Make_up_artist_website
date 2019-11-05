@@ -18,7 +18,8 @@ body {
   position: relative;
   font-family: 'Lato', sans-serif;
   background-color: black;
-  background-image: url("../images/makeUp.jpeg"); 
+  /*background-image: url("../images/makeUp.jpeg"); */
+    background-image: url("../images/back2.jpg");
   background-position: center; 
   background-repeat: no-repeat;
   background-size: cover; 
@@ -103,7 +104,7 @@ outline: none;
   font-weight: 900;
   font-size: 2.8em;
   color: #fff;
-  text-shadow: 2px 2px 4px #000000;
+  text-shadow: 6px 6px 8px #000000;
 }
 
 
@@ -260,7 +261,10 @@ footer .copy .col-12 > p {
   .container {margin: 0; padding: 0;}
   .container .row {margin: 0; border-radius: 0;}
   .container h2 {margin: 8% 0 12% 0;}
-  .hero {background-image: url("../images/makeUp.jpeg"); background-position: center; background-repeat: no-repeat; background-size: cover;}
+  .navbar .facebook {margin-right: 10px;}
+
+  .hero {height: 50vh; background-image: url("../images/back2.jpg"); background-position: center; background-repeat: no-repeat; background-size: cover;}
+
   .gallery {background-color: black; margin:0; padding: 0;}
   .gallery .row { margin: 0,; padding: 3% 0;}
   .gallery img {width: 40%;}
@@ -271,7 +275,6 @@ footer .copy .col-12 > p {
 }
 
 @media (max-width: 991.98px) {
-  .about img {width: 70%;}
   .gallery img {width: 40%;}
   .fancybox-show-thumbs .fancybox-inner {right: 0;}
   .fancybox-show-thumbs .fancybox-thumbs {display: none;}
