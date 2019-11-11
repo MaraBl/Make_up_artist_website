@@ -18,8 +18,7 @@ body {
   position: relative;
   font-family: 'Lato', sans-serif;
   background-color: black;
-  /*background-image: url("../images/makeUp.jpeg"); */
-    background-image: url("../images/back2.jpg");
+  background-image: url("../images/back2.jpg");
   background-position: center; 
   background-repeat: no-repeat;
   background-size: cover; 
@@ -116,7 +115,7 @@ outline: none;
 
 .about img {
   width: 80%;
-  min-width: 300px;
+  min-width: 250px;
   height: auto;
   margin: 5%;
   border-radius: 5%;
@@ -264,7 +263,7 @@ footer .copy .col-12 > p {
   .navbar .facebook {margin-right: 10px;}
 
   .hero {height: 50vh; background-image: url("../images/back2.jpg"); background-position: center; background-repeat: no-repeat; background-size: cover;}
-
+  .ml3 {font-size: 2em;}
   .gallery {background-color: black; margin:0; padding: 0;}
   .gallery .row { margin: 0,; padding: 3% 0;}
   .gallery img {width: 40%;}
@@ -272,6 +271,7 @@ footer .copy .col-12 > p {
   footer .row {text-align: left; padding: 7%;}
   footer .row .col-md-4 {margin: 2%; padding:2%;}
   footer .row .col-sm-12 {margin-bottom: 5%;}
+  footer a {font-size: 14px;}
 }
 
 @media (max-width: 991.98px) {
